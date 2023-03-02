@@ -1,13 +1,18 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-
-import NxWelcome from './nx-welcome';
+import {
+  PushDataViews,
+  MyApolloProvider,
+  MyQueryClientProvider,
+} from '@push-data/push-data-views';
 
 export function App() {
   return (
     <>
-      <NxWelcome title="push-data-client" />
-
+      <MyApolloProvider>
+        <MyQueryClientProvider>
+          <PushDataViews />
+        </MyQueryClientProvider>
+      </MyApolloProvider>
       <div />
     </>
   );
