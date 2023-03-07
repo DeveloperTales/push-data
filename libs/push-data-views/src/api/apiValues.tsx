@@ -1,5 +1,5 @@
-export const webApiHttpUrl = "https://localhost:7145/";
-export const webApiWSUrl = 'wss://localhost:7145/';
+export const webApiHttpUrl = "http://localhost:5177/";
+export const webApiWSUrl = 'ws://localhost:5177/';
 
 export interface Author{
     name: string
